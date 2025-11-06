@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import { Text, View, Image, TextInput, TouchableOpacity, Alert } from 'react-native';
 import { style } from "./styles";  // Seu import
 
@@ -14,6 +15,17 @@ export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+=======
+import { Text, View, Image, TextInput, TouchableOpacity, Alert } from 'react-native';  // Touchable (errado) → TouchableOpacity (certo)
+import { style } from "./styles";
+const Logo = require("../../assets/Logo_Power.png");
+import { MaterialIcons } from '@expo/vector-icons';
+
+export default function Login() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [showPassword, setShowPassword] = useState(false);  // Novo estado pro olho
+>>>>>>> b5026a81f747335880c8fb26a3763140165947cd
 
     function getLogin(){
         try{
@@ -73,6 +85,7 @@ export default function Login() {
                     <Text style={style.textbutton}>Entrar</Text>
                 </TouchableOpacity>
             </View>
+<<<<<<< HEAD
 
             {/* Rodapé clicável */}
             <View style={style.footerRow || { flexDirection: 'row', justifyContent: 'center', paddingBottom: 20 }}>  // Fallback se não tiver o estilo
@@ -81,6 +94,9 @@ export default function Login() {
                     <Text style={style.textbottomcreate}>crie uma agora</Text>
                 </TouchableOpacity>
             </View>
+=======
+            <Text style={style.textbottom}>Não tem conta? <Text style={style.textbottomcreate}>crie uma agora</Text></Text>
+>>>>>>> b5026a81f747335880c8fb26a3763140165947cd
         </View>
     );
 }

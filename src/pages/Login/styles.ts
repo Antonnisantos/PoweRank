@@ -84,11 +84,6 @@ export const style = StyleSheet.create({
     textbottomcreate: {
         fontSize: 16,
         color: themas.colors.primary
-    },
-    footerRow: {
-  flexDirection: 'row',
-  justifyContent: 'center',
-  paddingBottom: 20,
-  alignItems: 'center',  
-},
-})
+    }
+}
+,)
